@@ -12,8 +12,11 @@
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.css" rel="stylesheet">
-
+    <link rel="stylesheet" href="css/font-awesome.min.css">
     <link href="css/styles.css" rel="stylesheet">
+
+
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,400italic|Montserrat:700' rel='stylesheet' type='text/css'>
 
     <!--[if lt IE 9]><script src="js/ie8-responsive-file-warning.js"></script><![endif]-->
 
@@ -35,7 +38,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Trunk Club</a>
+          <a class="navbar-brand" href="#"><img src="images/tc-wordmark-black.png" alt="Trunk Club Logo" class="logo" /></a>
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
@@ -63,136 +66,144 @@
     </div> <!-- /container -->
 
 
-    <div class="container content-wrapper">
+    <div class="container content-wrapper item">
       <div class="row">
-        <div class="col-md-2">
-          <img src="shirt.jpg" alt="Shirt">
+        <div class="col-md-3 col-sm-3">
+          <img src="images/shirt1.png" alt="Shirt" class="image-scale">
         </div>
-        <div class="col-md-10">
+        <div class="col-md-9 col-sm-9">
           <h2>Shirt: Eton Oxford Cloth Button Down (Blue)</h2>
-  
-         <!--  <div class="panel-group" id="accordion" data-toggle="buttons">
-            <div class="panel panel-default">
-              <div class="panel-heading">
-                <h4 class="panel-title">
-                  <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
-                    <label class="btn btn-primary">
-                      <input type="radio" name="options" id="option1"> I'm keeping this.
-                    </label>
-                  </a>
-                </h4>
-              </div>
-              <div id="collapseOne" class="panel-collapse collapse in">
-                <div class="panel-body">
-                  <p>Great! Your stylist will keep this in mind and make recommendations based on your preferences.</p>  
-                </div>
+          <div class="panel-group" id="accordion">
+          <div class="panel">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a  class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                  <i class="fa fa-check-circle"></i> I'm keeping this.
+                </a>
+              </h4>
+            </div>
+            <div id="collapseOne" class="panel-collapse collapse">
+              <div class="panel-body">
+                <p>Great! Your stylist will keep this in mind and make recommendations based on your preferences.</p>  
               </div>
             </div>
-            <div class="panel panel-default">
-              <div class="panel-heading">
-                <h4 class="panel-title">
-                  <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
-                    <label class="btn btn-primary">
-                      <input type="radio" name="options" id="option2"> I'm sending this back
-                    </label>
-                  </a>
-                </h4>
-              </div>
-              <div id="collapseTwo" class="panel-collapse collapse">
-                <div class="panel-body">
-                  
-                    <p>Sorry to hear that! Take a few seconds to give (Stylist’s name) some feedback so (he/she) can find you a better solution. (Optional)</p>
-                    <label class="checkbox-inline">
-                      <input type="checkbox" id="inlineCheckbox1" value="option1"> It doesn't fit well.
-                    </label>
-                    <label class="checkbox-inline">
-                      <input type="checkbox" id="inlineCheckbox2" value="option2">I'm not happy with the quality
-                    </label>
-                    <label class="checkbox-inline">
-                      <input type="checkbox" id="inlineCheckbox3" value="option3"> I don't like this style.
-                    </label>
-                    <label class="checkbox-inline">
-                      <input type="checkbox" id="inlineCheckbox3" value="option3"> I don't like this color/pattern.
-                    </label>
-                    <p>Other Comments</p>
-                    <textarea class="form-control" rows="3"></textarea>
-                 
-                </div>
-              </div>
-            </div>
-            <div class="panel panel-default">
-              <div class="panel-heading">
-                <h4 class="panel-title">
-                  <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
-                    <label class="btn btn-primary">
-                      <input type="radio" name="options" id="option3"> I'm not sure about this one.
-                    </label>
-                  </a>
-                </h4>
-              </div>
-              <div id="collapseThree" class="panel-collapse collapse">
-                <div class="panel-body">
-                  <p>This stuff can be tricky. (Stylist’s name) will get in touch with you and help you decide if this shirt is right for your wardrobe. To help (him/her) out, why not upload a photo of you trying the shirt on? (Optional)</p>
-                  <label for="exampleInputFile">Upload an image</label>
-                  <input type="file" id="exampleInputFile">
-                </div>
-              </div>
-            </div>
-          </div> -->
-        <div class="panel">
-          <div class="radio">
-            <label>
-              <input class="option" type="radio" name="optionsRadios" id="optionsRadios1" value="option1">
-              I'm keeping this.
-            </label>
           </div>
-            <div class="panel-body">
-              <p>Great! Your stylist will keep this in mind and make recommendations based on your preferences.</p>  
+          <div class="panel">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a  class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                  <i class="fa fa-times-circle"></i> I'm sending this back
+                </a>
+              </h4>
             </div>
-        </div>
-        <div class="panel">  
-          <div class="radio">
-            <label>
-              <input class="option" type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
-              I'm sending this back
-            </label>
+            <div id="collapseTwo" class="panel-collapse collapse">
+              <div class="panel-body">
+                <p>Sorry to hear that! Take a few seconds to give (Stylist’s name) some feedback so (he/she) can find you a better solution. (Optional)</p>
+                <label class="checkbox-inline">
+                  <input type="checkbox" id="inlineCheckbox1" value="option1"> It doesn't fit well.
+                </label>
+                <label class="checkbox-inline">
+                  <input type="checkbox" id="inlineCheckbox2" value="option2"> I'm not happy with the quality
+                </label>
+                <label class="checkbox-inline">
+                  <input type="checkbox" id="inlineCheckbox3" value="option3"> I don't like this style.
+                </label>
+                <label class="checkbox-inline">
+                  <input type="checkbox" id="inlineCheckbox3" value="option3"> I don't like this color/pattern.
+                </label>
+                <p>Other Comments</p>
+                <textarea class="form-control" rows="3"></textarea>
+              </div>
+            </div>
           </div>
-          <div class="panel-body">
-            <p>Sorry to hear that! Take a few seconds to give (Stylist’s name) some feedback so (he/she) can find you a better solution. (Optional)</p>
-            <label class="checkbox-inline">
-              <input type="checkbox" id="inlineCheckbox1" value="option1"> It doesn't fit well.
-            </label>
-            <label class="checkbox-inline">
-              <input type="checkbox" id="inlineCheckbox2" value="option2"> I'm not happy with the quality
-            </label>
-            <label class="checkbox-inline">
-              <input type="checkbox" id="inlineCheckbox3" value="option3"> I don't like this style.
-            </label>
-            <label class="checkbox-inline">
-              <input type="checkbox" id="inlineCheckbox3" value="option3"> I don't like this color/pattern.
-            </label>
-            <p>Other Comments</p>
-            <textarea class="form-control" rows="3"></textarea>
+          <div class="panel">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a  class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+                  <i class="fa fa-question-circle"></i> I'm not sure about this one.
+                </a>
+              </h4>
+            </div>
+            <div id="collapseThree" class="panel-collapse collapse">
+              <div class="panel-body">
+                <p>This stuff can be tricky. (Stylist’s name) will get in touch with you and help you decide if this shirt is right for your wardrobe. To help (him/her) out, why not upload a photo of you trying the shirt on? (Optional)</p>
+                <label for="exampleInputFile">Upload an image</label>
+                <input type="file" id="exampleInputFile">
+              </div>
+            </div>
           </div>
         </div>
-        <div class="panel">
-          <div class="radio">
-            <label>
-              <input class="option" type="radio" name="optionsRadios" id="optionsRadios3" value="option3">
-               I'm not sure about this one.
-            </label>
+        </div>
+      </div>
+    </div>
+
+    <div class="container content-wrapper item">
+      <div class="row">
+        <div class="col-md-3 col-sm-3">
+          <img src="images/shirt2.png" alt="Shirt" class="image-scale">
+        </div>
+        <div class="col-md-9 col-sm-9">
+          <h2>Shirt: Eton Oxford Cloth Button Down (Blue)</h2>
+          <div class="panel-group" id="accordion2">
+          <div class="panel">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a  class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne2">
+                  <i class="fa fa-check-circle"></i> I'm keeping this.
+                </a>
+              </h4>
+            </div>
+            <div id="collapseOne2" class="panel-collapse collapse">
+              <div class="panel-body">
+                <p>Great! Your stylist will keep this in mind and make recommendations based on your preferences.</p>  
+              </div>
+            </div>
           </div>
-          <div class="panel-body">
-            <p>This stuff can be tricky. (Stylist’s name) will get in touch with you and help you decide if this shirt is right for your wardrobe. To help (him/her) out, why not upload a photo of you trying the shirt on? (Optional)</p>
-            <label for="exampleInputFile">Upload an image</label>
-            <input type="file" id="exampleInputFile">
+          <div class="panel">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a  class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo2">
+                  <i class="fa fa-times-circle"></i> I'm sending this back
+                </a>
+              </h4>
+            </div>
+            <div id="collapseTwo2" class="panel-collapse collapse">
+              <div class="panel-body">
+                <p>Sorry to hear that! Take a few seconds to give (Stylist’s name) some feedback so (he/she) can find you a better solution. (Optional)</p>
+                <label class="checkbox-inline">
+                  <input type="checkbox" id="inlineCheckbox1" value="option1"> It doesn't fit well.
+                </label>
+                <label class="checkbox-inline">
+                  <input type="checkbox" id="inlineCheckbox2" value="option2"> I'm not happy with the quality
+                </label>
+                <label class="checkbox-inline">
+                  <input type="checkbox" id="inlineCheckbox3" value="option3"> I don't like this style.
+                </label>
+                <label class="checkbox-inline">
+                  <input type="checkbox" id="inlineCheckbox3" value="option3"> I don't like this color/pattern.
+                </label>
+                <p>Other Comments</p>
+                <textarea class="form-control" rows="3"></textarea>
+              </div>
+            </div>
+          </div>
+          <div class="panel">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a  class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion2" href="#collapseThree2">
+                  <i class="fa fa-question-circle"></i> I'm not sure about this one.
+                </a>
+              </h4>
+            </div>
+            <div id="collapseThree2" class="panel-collapse collapse">
+              <div class="panel-body">
+                <p>This stuff can be tricky. (Stylist’s name) will get in touch with you and help you decide if this shirt is right for your wardrobe. To help (him/her) out, why not upload a photo of you trying the shirt on? (Optional)</p>
+                <label for="exampleInputFile">Upload an image</label>
+                <input type="file" id="exampleInputFile">
+              </div>
+            </div>
           </div>
         </div>
-        
-
-
-
-
         </div>
       </div>
     </div>
@@ -204,14 +215,19 @@
     <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
 
-    <script>
-    $(document).ready(function () {
-        $('input').click(function () {
-            $('input:not(:checked)').parent().removeClass("open");
-            $('input:checked').parent().addClass("open");
-        });    
-    });
-    </script>
+
+<script>
+
+$('#collapseCategory').on('show.bs.collapse', function(){
+  $('a.accordion-toggle > i').removeClass('glyphicon-collapse-up').addClass('glyphicon-collapse-down');
+});
+
+$('#collapseCategory').on('hide.bs.collapse', function(){
+  $('a.accordion-toggle > i').removeClass('glyphicon-collapse-down').addClass('glyphicon-collapse-up');
+});     
+
+</script>
+
 
   </body>
 </html>

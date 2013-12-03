@@ -1,5 +1,24 @@
 body {
   background: #fafafa;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+	font-family: 'Open Sans', sans-serif;
+  	font-weight: 400;
+}
+
+h1 {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+}
+
+
+.logo {
+	height: 17px;
+	float: left;
+	width: 160px;
 }
 
 .content-wrapper {
@@ -9,6 +28,50 @@ body {
   background-color: #fff;
 }
 
+.image-scale {
+	max-width: 100%;
+}
+
 .content-wrapper.first {
   margin-top: 100px;
 }
+
+.panel {
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	border: 1px solid #ddd;
+}
+
+.panel-group .panel-heading {
+	padding: 0;
+	background-color: #F1F1F1;
+}
+
+.item h2 {
+	margin-top: 10px;
+	margin-bottom: 20px;
+	font-weight: 400;
+}
+
+.panel-title > a {
+	display: block;
+	text-decoration: none;
+	font-size: 22px;
+}
+
+.panel-title > a > i {
+	padding: 10px;
+	color: #fff;
+	font-size: 28px;
+	background-color: #384862;
+	margin-right: 10px;
+}
+
+.panel-title > a.accordion-toggle.collapsed > i {
+	background-color: #8EA4C9;
+}
+
+.panel-group .panel-heading + .panel-collapse .panel-body {
+	border: none;
+}
+
