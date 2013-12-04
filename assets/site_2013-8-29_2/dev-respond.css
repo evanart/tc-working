@@ -1,0 +1,48 @@
+
+
+body {
+	border: 5px solid yellow;
+}
+
+
+
+
+
+@media (min-width: 768px) {
+	body {
+		border: 5px solid blue;
+	}
+
+
+}
+
+@media (min-width: 992px) {
+	body {
+		border: 5px solid red;
+	}
+
+
+	
+}
+
+
+@media (min-width: 1200px) {
+	body {
+		border: 5px solid orange;
+	}
+
+
+}
+
+@media (min-width: 1600px) {
+
+	body {
+		border: 5px solid green;
+	}
+
+
+
+}
+
+
+

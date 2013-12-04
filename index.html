@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="shortcut icon" href="../../docs-assets/ico/favicon.png">
+    <link rel="shortcut icon" href="images/favicon.ico">
 
     <title>Your Trunk</title>
 
@@ -14,9 +14,10 @@
     <link href="css/bootstrap.css" rel="stylesheet">
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link href="css/styles.css" rel="stylesheet">
+    <link href="css/dev-respond.css" rel="stylesheet">
 
 
-    <link href='http://fonts.googleapis.com/css?family=Lato:400,400italic|Montserrat:700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:700|Open+Sans' rel='stylesheet' type='text/css'>
 
     <!--[if lt IE 9]><script src="js/ie8-responsive-file-warning.js"></script><![endif]-->
 
@@ -50,163 +51,211 @@
     </div>
 
 
-    <div class="container content-wrapper first">
-      <div class="row">
-        <div class="col-md-8">
-          <h1>Trunk Feedback</h1>
-          <p class="lead">Take a moment to let (Stylist Name) know what you thought of your trunk. This will help (him/her) narrow down your preferences and provide you with better offers in the future.</p>
-        </div>
-        <div class="col-md-4">
-          <h3>Your Stylist</h3>
-          <img src="headshot.jpg" alt="Stylist Headshot" class="headshot">
-          <strong>Amy</strong>
-          <em>555-555-5555</em>
+    <div class="container">
+      <div class="content-wrapper first">
+        <div class="row">
+          <div class="col-md-7 col-sm-8">
+            <div class="intro">
+              <h1>Trunk Feedback</h1>
+              <p class="lead">Take a moment to let Amy know what you thought of your trunk. This will help her narrow down your preferences and provide you with better options in the future.</p>
+            </div>
+          </div>
+          <div class="col-md-5 col-sm-4">
+            <div class="stylist clearfix">
+              <h3>Your Stylist</h3>
+              <img src="images/stylist.jpg" alt="Stylist Headshot" class="headshot image-scale">
+              <div class="contact">
+                <h4>Amy</h4>
+                <span><i class="fa fa-phone"></i> 312-123-4567</span>
+                <span><i class="fa fa-envelope"></i> amy@trunkclub.com</span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div> <!-- /container -->
 
 
-    <div class="container content-wrapper item">
-      <div class="row">
-        <div class="col-md-3 col-sm-3">
-          <img src="images/shirt1.png" alt="Shirt" class="image-scale">
+    <div class="container">
+      <div class="content-wrapper item">
+        <div class="item-heading">
+            <h2>1. Shirt</h2>
         </div>
-        <div class="col-md-9 col-sm-9">
-          <h2>Shirt: Eton Oxford Cloth Button Down (Blue)</h2>
-          <div class="panel-group" id="accordion">
-          <div class="panel">
-            <div class="panel-heading">
-              <h4 class="panel-title">
-                <a  class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
-                  <i class="fa fa-check-circle"></i> I'm keeping this.
-                </a>
-              </h4>
+        <div class="item-body">
+          <div class="row">
+            <div class="col-md-3 col-sm-3">
+              <img src="images/shirt1.png" alt="Shirt" class="image-scale">
             </div>
-            <div id="collapseOne" class="panel-collapse collapse">
-              <div class="panel-body">
-                <p>Great! Your stylist will keep this in mind and make recommendations based on your preferences.</p>  
+            <div class="col-md-9 col-sm-9">
+              <h2>Eton Oxford Cloth Button Down (Blue)</h2>
+              <div class="panel-group" id="accordion">
+              <div class="panel">
+                <div class="panel-heading">
+                  <h4 class="panel-title clearfix">
+                    <a  class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                      <i class="fa fa-check-circle"></i><span>I'm keeping this.</span>
+                    </a>
+                  </h4>
+                </div>
+                <div id="collapseOne" class="panel-collapse collapse">
+                  <div class="panel-body">
+                    <p>Great! Your stylist will keep this in mind and make recommendations based on your preferences.</p>  
+                  </div>
+                </div>
+              </div>
+              <div class="panel">
+                <div class="panel-heading">
+                  <h4 class="panel-title clearfix">
+                    <a  class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                      <i class="fa fa-times-circle"></i><span>I'm sending this back</span>
+                    </a>
+                  </h4>
+                </div>
+                <div id="collapseTwo" class="panel-collapse collapse">
+                  <div class="panel-body">
+                    <p>Sorry to hear that! Take a few seconds to give Amy some feedback so she can find you a better solution. <em>(Optional)</em></p>
+                    
+                    <div class="row">
+                      <div class="col-md-5">
+                        <ul>
+                          <li>
+                            <label class="checkbox">
+                              <input type="checkbox" id="inlineCheckbox1" value="option1"> It doesn't fit well.
+                            </label>
+                          </li>
+                          <li>
+                            <label class="checkbox">
+                              <input type="checkbox" id="inlineCheckbox2" value="option2"> I'm not happy with the quality
+                            </label>
+                          </li>
+                          <li>
+                            <label class="checkbox">
+                              <input type="checkbox" id="inlineCheckbox3" value="option3"> I don't like this style.
+                            </label>
+                          </li>
+                          <li>
+                            <label class="checkbox">
+                              <input type="checkbox" id="inlineCheckbox3" value="option3"> I don't like this color/pattern.
+                            </label>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="col-md-7">
+                        <p>Other Comments</p>
+                        <textarea class="form-control" rows="3"></textarea>
+                      </div>
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+              <div class="panel">
+                <div class="panel-heading">
+                  <h4 class="panel-title clearfix">
+                    <a  class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+                      <i class="fa fa-question-circle"></i><span>I'm not sure about this one.</span>
+                    </a>
+                  </h4>
+                </div>
+                <div id="collapseThree" class="panel-collapse collapse">
+                  <div class="panel-body">
+                    <p>This stuff can be tricky. Amy will get in touch with you and help you decide if this shirt is right for your wardrobe.</p>
+                    <label for="exampleInputFile">To help her out, why not upload a photo of you trying the shirt on? <em>(Optional)</em></label>
+                    <input type="file" id="exampleInputFile">
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="panel">
-            <div class="panel-heading">
-              <h4 class="panel-title">
-                <a  class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
-                  <i class="fa fa-times-circle"></i> I'm sending this back
-                </a>
-              </h4>
-            </div>
-            <div id="collapseTwo" class="panel-collapse collapse">
-              <div class="panel-body">
-                <p>Sorry to hear that! Take a few seconds to give (Stylist’s name) some feedback so (he/she) can find you a better solution. (Optional)</p>
-                <label class="checkbox-inline">
-                  <input type="checkbox" id="inlineCheckbox1" value="option1"> It doesn't fit well.
-                </label>
-                <label class="checkbox-inline">
-                  <input type="checkbox" id="inlineCheckbox2" value="option2"> I'm not happy with the quality
-                </label>
-                <label class="checkbox-inline">
-                  <input type="checkbox" id="inlineCheckbox3" value="option3"> I don't like this style.
-                </label>
-                <label class="checkbox-inline">
-                  <input type="checkbox" id="inlineCheckbox3" value="option3"> I don't like this color/pattern.
-                </label>
-                <p>Other Comments</p>
-                <textarea class="form-control" rows="3"></textarea>
-              </div>
             </div>
           </div>
-          <div class="panel">
-            <div class="panel-heading">
-              <h4 class="panel-title">
-                <a  class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
-                  <i class="fa fa-question-circle"></i> I'm not sure about this one.
-                </a>
-              </h4>
-            </div>
-            <div id="collapseThree" class="panel-collapse collapse">
-              <div class="panel-body">
-                <p>This stuff can be tricky. (Stylist’s name) will get in touch with you and help you decide if this shirt is right for your wardrobe. To help (him/her) out, why not upload a photo of you trying the shirt on? (Optional)</p>
-                <label for="exampleInputFile">Upload an image</label>
-                <input type="file" id="exampleInputFile">
-              </div>
-            </div>
-          </div>
-        </div>
         </div>
       </div>
     </div>
 
-    <div class="container content-wrapper item">
-      <div class="row">
-        <div class="col-md-3 col-sm-3">
-          <img src="images/shirt2.png" alt="Shirt" class="image-scale">
-        </div>
-        <div class="col-md-9 col-sm-9">
-          <h2>Shirt: Eton Oxford Cloth Button Down (Blue)</h2>
-          <div class="panel-group" id="accordion2">
-          <div class="panel">
-            <div class="panel-heading">
-              <h4 class="panel-title">
-                <a  class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne2">
-                  <i class="fa fa-check-circle"></i> I'm keeping this.
-                </a>
-              </h4>
+    <div class="container">
+      <div class="content-wrapper item">
+        <div class="row">
+          <div class="col-md-3 col-sm-3">
+            <img src="images/shirt2.png" alt="Shirt" class="image-scale">
+          </div>
+          <div class="col-md-9 col-sm-9">
+            <h2>Shirt: Eton Oxford Cloth Button Down (Blue)</h2>
+            <div class="panel-group" id="accordion2">
+            <div class="panel">
+              <div class="panel-heading">
+                <h4 class="panel-title clearfix">
+                  <a  class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne2">
+                    <i class="fa fa-check-circle"></i><span>I'm keeping this.</span>
+                  </a>
+                </h4>
+              </div>
+              <div id="collapseOne2" class="panel-collapse collapse">
+                <div class="panel-body">
+                  <p>Great! Your stylist will keep this in mind and make recommendations based on your preferences.</p>  
+                </div>
+              </div>
             </div>
-            <div id="collapseOne2" class="panel-collapse collapse">
-              <div class="panel-body">
-                <p>Great! Your stylist will keep this in mind and make recommendations based on your preferences.</p>  
+            <div class="panel">
+              <div class="panel-heading">
+                <h4 class="panel-title clearfix">
+                  <a  class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo2">
+                    <i class="fa fa-times-circle"></i><span>I'm sending this back</span>
+                  </a>
+                </h4>
+              </div>
+              <div id="collapseTwo2" class="panel-collapse collapse">
+                <div class="panel-body">
+                  <p>Sorry to hear that! Take a few seconds to give (Stylist’s name) some feedback so (he/she) can find you a better solution. (Optional)</p>
+                  <label class="checkbox-inline">
+                    <input type="checkbox" id="inlineCheckbox1" value="option1"> It doesn't fit well.
+                  </label>
+                  <label class="checkbox-inline">
+                    <input type="checkbox" id="inlineCheckbox2" value="option2"> I'm not happy with the quality
+                  </label>
+                  <label class="checkbox-inline">
+                    <input type="checkbox" id="inlineCheckbox3" value="option3"> I don't like this style.
+                  </label>
+                  <label class="checkbox-inline">
+                    <input type="checkbox" id="inlineCheckbox3" value="option3"> I don't like this color/pattern.
+                  </label>
+                  <p>Other Comments</p>
+                  <textarea class="form-control" rows="3"></textarea>
+                </div>
+              </div>
+            </div>
+            <div class="panel">
+              <div class="panel-heading">
+                <h4 class="panel-title clearfix">
+                  <a  class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion2" href="#collapseThree2">
+                    <i class="fa fa-question-circle"></i><span>I'm not sure about this one.</span>
+                  </a>
+                </h4>
+              </div>
+              <div id="collapseThree2" class="panel-collapse collapse">
+                <div class="panel-body">
+                  <p>This stuff can be tricky. (Stylist’s name) will get in touch with you and help you decide if this shirt is right for your wardrobe. To help (him/her) out, why not upload a photo of you trying the shirt on? (Optional)</p>
+                  <label for="exampleInputFile">Upload an image</label>
+                  <input type="file" id="exampleInputFile">
+                </div>
               </div>
             </div>
           </div>
-          <div class="panel">
-            <div class="panel-heading">
-              <h4 class="panel-title">
-                <a  class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo2">
-                  <i class="fa fa-times-circle"></i> I'm sending this back
-                </a>
-              </h4>
-            </div>
-            <div id="collapseTwo2" class="panel-collapse collapse">
-              <div class="panel-body">
-                <p>Sorry to hear that! Take a few seconds to give (Stylist’s name) some feedback so (he/she) can find you a better solution. (Optional)</p>
-                <label class="checkbox-inline">
-                  <input type="checkbox" id="inlineCheckbox1" value="option1"> It doesn't fit well.
-                </label>
-                <label class="checkbox-inline">
-                  <input type="checkbox" id="inlineCheckbox2" value="option2"> I'm not happy with the quality
-                </label>
-                <label class="checkbox-inline">
-                  <input type="checkbox" id="inlineCheckbox3" value="option3"> I don't like this style.
-                </label>
-                <label class="checkbox-inline">
-                  <input type="checkbox" id="inlineCheckbox3" value="option3"> I don't like this color/pattern.
-                </label>
-                <p>Other Comments</p>
-                <textarea class="form-control" rows="3"></textarea>
-              </div>
-            </div>
           </div>
-          <div class="panel">
-            <div class="panel-heading">
-              <h4 class="panel-title">
-                <a  class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion2" href="#collapseThree2">
-                  <i class="fa fa-question-circle"></i> I'm not sure about this one.
-                </a>
-              </h4>
-            </div>
-            <div id="collapseThree2" class="panel-collapse collapse">
-              <div class="panel-body">
-                <p>This stuff can be tricky. (Stylist’s name) will get in touch with you and help you decide if this shirt is right for your wardrobe. To help (him/her) out, why not upload a photo of you trying the shirt on? (Optional)</p>
-                <label for="exampleInputFile">Upload an image</label>
-                <input type="file" id="exampleInputFile">
-              </div>
-            </div>
-          </div>
-        </div>
         </div>
       </div>
     </div>
+
+    <footer>
+      <div class="navbar navbar-default" role="navigation">
+        <div class="container">
+          <a class="navbar-brand" href="#"><img src="images/tc-wordmark-black.png" alt="Trunk Club Logo" class="logo" /></a>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="../navbar/">Log in</a></li>
+            <li><a href="../navbar/">Get Started</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
 
 
     <!-- Bootstrap core JavaScript

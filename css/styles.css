@@ -2,6 +2,7 @@ body {
   background: #fafafa;
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
+  font-size: 16px;
 }
 
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
@@ -23,17 +24,63 @@ h1 {
 
 .content-wrapper {
   border: 1px solid #ddd;
-  padding: 20px;
   margin-bottom: 40px;
   background-color: #fff;
 }
 
+.intro {
+	padding: 0 20px;
+}
+
+.stylist {
+	border-left: 1px solid #ddd;
+}
+
+.stylist h3 {
+	background-color: #F1F1F1;
+	border-top: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+	margin: 0;
+	padding: 10px;
+}
+
+.contact {
+	padding: 0 10px 10px;
+	text-align: center;
+}
+
+.contact h4 {
+	margin-top: 0;
+}
+
+.contact span {
+	display: block;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+.headshot {
+	border-radius: 50%;
+	padding: 20px;
+}
+
 .image-scale {
 	max-width: 100%;
+	margin: 0 auto;
+	display: block;
 }
 
 .content-wrapper.first {
   margin-top: 100px;
+}
+
+.item-heading {
+	padding: 10px 20px;
+	background-color: #F1F1F1;
+}
+
+.item-body {
+	padding: 10px 20px;
 }
 
 .panel {
@@ -56,22 +103,113 @@ h1 {
 .panel-title > a {
 	display: block;
 	text-decoration: none;
-	font-size: 22px;
+	font-size: 18px;
 }
 
 .panel-title > a > i {
 	padding: 10px;
 	color: #fff;
-	font-size: 28px;
+	font-size: 22px;
 	background-color: #384862;
-	margin-right: 10px;
+	display:inline-block;
+	float: left;
+	max-width: 25%;
+
 }
 
 .panel-title > a.accordion-toggle.collapsed > i {
 	background-color: #8EA4C9;
 }
 
+.panel-title > a > span {
+	display: inline-block;
+	max-width: 75%;
+	padding: 10px;
+}
+
 .panel-group .panel-heading + .panel-collapse .panel-body {
 	border: none;
 }
 
+.panel-body ul {
+	list-style: none;
+	padding: 0 0 0 3px;
+}
+
+.panel-body label {
+	font-weight: 400;
+}
+
+.panel-body textarea.form-control {
+	max-width: 500px;
+}
+
+
+
+footer {
+	background: #fff;
+	padding: 40px 0;
+	border-top: 1px solid #ddd;
+}
+
+footer .navbar-default {
+	background-color: transparent;
+	border: none;
+}
+
+footer .navbar-brand {
+	opacity: 0.4;
+}
+
+
+
+@media (min-width: 768px) {
+	.stylist h3 {
+		border-top: none;
+	}
+
+	.panel-title > a {
+		font-size: 22px;
+	}
+
+	.panel-title > a > i {
+		font-size: 28px;
+	}
+
+}
+
+@media (min-width: 992px) {
+
+	.headshot {
+		float: left;
+		padding: 0;
+		border-radius: 0;
+		max-width: 45%;
+	}
+
+
+	.contact {
+		float: left;
+		text-align: left;
+		padding: 15px;
+		max-width: 55%;
+	}
+
+	.contact span i {
+		padding: 5px 5px 5px 0;
+		text-align: center;
+		width: 20px;
+	}
+
+	
+}
+
+
+@media (min-width: 1200px) {
+
+
+}
+
+@media (min-width: 1600px) {
+
+}

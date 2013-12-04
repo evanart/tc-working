@@ -1,0 +1,58 @@
+
+
+body:before {
+	content: "min";
+	background-color: green;
+	color: white;
+	padding: 3px;
+	display: block;
+	position: fixed;
+	opacity: 0.4;
+}
+
+
+
+
+
+@media (min-width: 768px) {
+	body:before {
+		content: "768px";
+		background-color: orange;
+	}
+
+
+}
+
+@media (min-width: 992px) {
+	body:before {
+		content: "992px";
+		background-color: red;
+	}
+
+
+	
+}
+
+
+@media (min-width: 1200px) {
+	body:before {
+		content: "1200px";
+		background-color: violet;
+	}
+
+
+}
+
+@media (min-width: 1600px) {
+
+	body:before {
+		content: "1600px";
+		background-color: blue;
+	}
+
+
+
+}
+
+
+
