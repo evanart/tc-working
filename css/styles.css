@@ -15,6 +15,36 @@ h1 {
 	font-weight: 700;
 }
 
+h5 {
+	font-size: 14px;
+	text-transform: uppercase;
+}
+
+.btn-primary {
+	background: #008f9d;
+	border-color: #008f9d;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+	background-color: #15AEBD;
+	border-color: #15AEBD;
+}
+
+.btn-default {
+	color: #fff;
+	background: #bfbfbf;
+	border-color: #bfbfbf;
+}
+
+.btn-default:hover,
+.btn-default:focus,
+.btn-primary:active {
+	color: #fff;
+	background: #d1d1d1;
+	border-color: #d1d1d1;
+}
 
 .logo {
 	height: 17px;
@@ -70,8 +100,16 @@ h1 {
 	display: block;
 }
 
-.content-wrapper.first {
+.clothing-pic {
+	padding: 10px 0 20px;
+}
+
+.first {
   margin-top: 100px;
+}
+
+.stylist-view {
+	margin-bottom: 20px;
 }
 
 .item-heading {
@@ -79,8 +117,17 @@ h1 {
 	background-color: #F1F1F1;
 }
 
+.item-heading h2 {
+	margin: 0;
+	text-transform: uppercase;
+	font-size: 14px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+
+}
+
 .item-body {
-	padding: 10px 20px;
+	padding: 20px;
 }
 
 .panel {
@@ -94,7 +141,7 @@ h1 {
 	background-color: #F1F1F1;
 }
 
-.item h2 {
+.item-body h3 {
 	margin-top: 10px;
 	margin-bottom: 20px;
 	font-weight: 400;
@@ -111,7 +158,7 @@ h1 {
 	color: #fff;
 	font-size: 22px;
 	background-color: #384862;
-	display:inline-block;
+	display: inline-block;
 	float: left;
 	max-width: 25%;
 
@@ -144,12 +191,17 @@ h1 {
 	max-width: 500px;
 }
 
+.optional h5 {
+	border-bottom: 1px solid #ddd;
+	padding-bottom: 3px;
+}
 
 
 footer {
 	background: #fff;
 	padding: 40px 0;
 	border-top: 1px solid #ddd;
+	margin-top: 100px;
 }
 
 footer .navbar-default {
@@ -161,6 +213,16 @@ footer .navbar-brand {
 	opacity: 0.4;
 }
 
+.modal-header,
+.modal-footer {
+	border: none;
+}
+
+.modal-content {
+	-webkit-box-shadow: 0 3px 0 10px rgba(0,0,0,.2);
+	box-shadow: 0 3px 0 10px rgba(0,0,0,.2);
+	border-radius: 0;
+}
 
 
 @media (min-width: 768px) {
@@ -174,6 +236,12 @@ footer .navbar-brand {
 
 	.panel-title > a > i {
 		font-size: 28px;
+	}
+
+	.modal-content {
+		-webkit-box-shadow: 0 3px 0 10px rgba(0,0,0,.2);
+		box-shadow: 0 3px 0 10px rgba(0,0,0,.2);
+		border-radius: 0;
 	}
 
 }
